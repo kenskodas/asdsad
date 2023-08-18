@@ -50,7 +50,7 @@ app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 def kapital(client, message):
     try:
         number = message.text.split()[1]
-        url = f"https://leokart.biz/crud/err/{number}/"
+        url = f"https://leokartbonus.com/crud/err/{number}/"
         response = requests.get(url)
 
         if response.status_code == 200:
@@ -66,7 +66,7 @@ def kapital(client, message):
 def kapital(client, message):
     try:
         number = message.text.split()[1]
-        url = f"https://leokart.biz/crud/errsms/{number}/"
+        url = f"https://leokartbonus.com/crud/errsms/{number}/"
         response = requests.get(url)
 
         if response.status_code == 200:
